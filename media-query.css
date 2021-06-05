@@ -62,9 +62,27 @@
     width: 100%;
   }
 
-  
+
   @media (min-width: 320px) and (max-width: 480px) {
     
-    /* CSS */
+    body{
+        width: 100%;
+        display:block;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding: 10px;
+      }
+
+      h2{
+        font-size: 17px;
+      }
     
-  }
+      }
+      p{
+        font-size:14px;
+      }
+     
+    
+  
