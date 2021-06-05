@@ -58,6 +58,11 @@
     ##Screen = B/w 320px to 479px
   */
   
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  
   @media (min-width: 320px) and (max-width: 480px) {
     
     /* CSS */
