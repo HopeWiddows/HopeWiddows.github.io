@@ -1,13 +1,14 @@
 * {
         margin: 0;
         padding: 0;  
-        background-image: url("background.jpg");
+        background-image: url("Images/background.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover; 
         background-position: center;
     }
 
+    /*Header*/
 header{
         display: flex;
         flex-direction: column;
@@ -22,9 +23,41 @@ header{
         font-family: 'Monoton', cursive;
         font-size: 30px;
         color: #5e0559;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
     }
 
+    /*Body*/
+    p {
+        background: rgb(229, 159, 247, 0.3) !important;
+    }
+
+    h2 {
+        background:rgb(229, 159, 247, 0.719) !important;
+    }
+
+    h5 {
+        background:rgb(229, 159, 247, 0.719) !important;
+    }
+
+    body {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: auto; 
+        margin-right: auto;
+        margin-top:0px; 
+        width: 100vh;
+        min-height: 100vh;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: #5e0559;
+        
+    } 
+
+        /*Links between pages*/
     li, a, button{
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
@@ -71,26 +104,7 @@ header{
         cursor: pointer;
     }
 
-    p {
-        background: rgb(229, 159, 247, 0.3) !important;
-    }
-  body {
-
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      margin-left: auto; 
-      margin-right: auto;
-      margin-top:0px; 
-      width: 100vh;
-      min-height: 100vh;
-      font-family: 'Roboto', sans-serif;
-      font-size: 20px;
-      font-weight: bold;
-      color: #5e0559;
-    } 
-
+    /* Home Page */
     .index_page_container_1{
         z-index: 1;
         display: flex;
@@ -110,6 +124,7 @@ header{
     
     }
 
+    /* Experience Page*/
     .experience_page_container_1{
         z-index: 1;
         display: flex;
@@ -127,7 +142,7 @@ header{
         border-radius: 25px;     
         background:rgb(229, 159, 247, 0.719);
     }
-
+        /*Blog Page*/
     .blog_page_container_1{
         z-index: 1;
         display: flex;
@@ -138,15 +153,26 @@ header{
         font-size: 20px;
         text-align: center;
         font-weight: bold;
-        width: 600px;
-        height:200px;
+        width: 700px;
+        height:fit-content;
         color: #5d0269;
         border: solid #5d0269;
         border-radius: 25px;     
         background:rgb(229, 159, 247, 0.719);
-        justify-content: space-between;
+        justify-content: space-around;
+        padding:5%;
+        margin-bottom: 5%;
         }
 
+        .blog_page_container_1 img{
+            width: 600px;  
+            height:fit-content;
+            border-radius: 15%;
+            margin-bottom: 20px;
+        }
+
+
+        /*Contact page*/
      .contact_page_container_1{
             z-index: 1;
             display: flex;
@@ -160,9 +186,6 @@ header{
             width: 600px;
             height:200px;
             color: #5d0269;
-            
-            
-
         }
 
         form{
@@ -173,7 +196,6 @@ header{
             color: #5d0269;
             justify-content: space-around;
             text-align: center;
-            
         }
 
         .form-control{
@@ -181,8 +203,6 @@ header{
             border: solid #5d0269;
             border-radius: 25px;     
             background:rgb(229, 159, 247, 0.719);
-            
-
         }
 
         input{
@@ -211,12 +231,62 @@ header{
             cursor: pointer;
         }
     
+        #myBtn {
+            
+            position: fixed; /* Fixed/sticky position */
+            bottom: 10px; /* Place the button at the bottom of the page */ 
+            right: 10px;
+            z-index: 99; /* Make sure it does not overlap */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            font-size: 18px; /* Increase font size */
+            color: #5d0269;
+            border: solid #5d0269;
+            border-radius: 25px;    /* Rounded corners */ 
+            background:rgb(229, 159, 247, 0.719);
+          }
+          
+          #myBtn:hover {
+            background-color: lavender;
+            cursor: pointer;
+          }
 
         /*Profile image*/
-     img {  
-        width: 200px;  
-        height: 200px; 
-        border-radius: 50%;
-        }  
+        img {  
+            width: 200px;  
+            height: 200px; 
+            border-radius: 50%;
+            border: solid #5d0269;
+            }  
+
+/* Style all font awesome icons */
+.fa {
+    display: inline-block;
+    position: static;
+    padding: 7.5px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    border-radius: 15px;
+    color: #5d0269;
+    border: solid #5d0269;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    background-color: lavender;
+    cursor: pointer;
+  }
+
+  .page-footer{
+      margin: auto;
+      margin-bottom: 20px;
+      position: relative;
+
+  }
+  
+  
 
 
