@@ -48,11 +48,12 @@ header{
 
     .nav_links li {
         display: inline-block;
+       
         padding: 0px 20px;
-        outline: 3px solid #75086c;
-        outline-style: solid;
+        border: solid #5d0269;
         align-self: inherit;
         background: rgb(229, 159, 247, 0.719);
+        border-radius: 25px;
         
     }
 
@@ -61,7 +62,13 @@ header{
     }
 
     .nav_links li a:hover {
-        color:rebeccapurple;
+        background-color: lavender;
+        cursor: pointer;
+    }
+    
+    .nav_links li:hover {
+        background-color: lavender;
+        cursor: pointer;
     }
 
     p {
@@ -153,49 +160,63 @@ header{
             width: 600px;
             height:200px;
             color: #5d0269;
+            
+            
+
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            margin-top: auto;
+            transition: all 4s ease-in-out;
+            color: #5d0269;
+            justify-content: space-around;
+            text-align: center;
+            
+        }
+
+        .form-control{
+            color: #5d0269;
+            border: solid #5d0269;
+            border-radius: 25px;     
+            background:rgb(229, 159, 247, 0.719);
+            
+
+        }
+
+        input{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 45px;
+        }
+
+        textarea{
+            display: flex;
+            justify-content: center;
+            height: 80px;
+            text-align: center;
+        }
+
+        form .submit{
+            color: #5d0269;
             border: solid #5d0269;
             border-radius: 25px;     
             background:rgb(229, 159, 247, 0.719);
         }
+
+        form .submit:hover{
+            background-color: lavender;
+            cursor: pointer;
+        }
     
 
-
+        /*Profile image*/
      img {  
         width: 200px;  
         height: 200px; 
         border-radius: 50%;
         }  
 
-        /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
+
