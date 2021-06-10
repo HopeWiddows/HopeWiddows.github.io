@@ -10,12 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fonts.css">
-    <link rel="media-query" href="media-query.css">
+    <link rel="stylesheet" href="media-query.css">
     <link rel="stylesheet" href="Monoton-Regular.woff2">
     <link rel="stylesheet" href="Roboto-Regular.woff2">
+    <script src="scroll.js"></script>
      <!-- Add icon library -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="scroll.js"></script>
+    
     <title>Hope Widdows Portfolio Page</title>
   </head>
   
@@ -23,13 +24,19 @@
   <body>
 
     <header>
+      <!--Navigtion Bar-->
       <nav>
-        <ul class="nav_links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="nav_links">
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle"/>
+
+          <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experience</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
       </nav>
 
       <h1>Get in touch!</h1>
@@ -53,18 +60,19 @@
     </div>
 
   </section>
+</body>
 
-  <footer class="page-footer">
-    <!-- Add font awesome icons -->
-    <a href="www.facebook.com" class="fa fa-facebook"></a>
-        <a href="www.linkedin.com" class="fa fa-linkedin"></a>
-        <a href="www.twitter.com" class="fa fa-twitter"></a>
-        <a href="www.instagram.com" class="fa fa-instagram"></a>
-        <a href="www.github.com" class="fa fa-github"></a>
+<footer class="page-footer">
+  <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+  <a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin"></a>
+  <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+  <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+  <a href="https://www.github.com" target="_blank" class="fa fa-github"></a>
+
 
     <button onclick="topFunction()" id="myBtn" title="Return to Top of Page">Return to Top</button>  
+   </footer>
 
-  </footer>
 
-  </body>
+
 </html>

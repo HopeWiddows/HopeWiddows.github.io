@@ -17,7 +17,7 @@ header{
         position: inherit;
         margin-left: auto;
         margin-right: auto;
-        width: 100vh;
+        width: 100vmin;
         letter-spacing: 1px;
         word-spacing: 0.6px;
         font-family: 'Monoton', cursive;
@@ -33,11 +33,14 @@ header{
 
     h2 {
         background:rgb(229, 159, 247, 0.719) !important;
+        margin-bottom: 10px;
     }
 
-    h5 {
+    h6 {
         background:rgb(229, 159, 247, 0.719) !important;
+        margin-bottom: 10px;
     }
+    
 
     body {
 
@@ -48,7 +51,7 @@ header{
         margin-left: auto; 
         margin-right: auto;
         margin-top:0px; 
-        width: 100vh;
+        width: 100vmin;
         min-height: 100vh;
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
@@ -57,49 +60,51 @@ header{
         
     } 
 
-        /*Links between pages*/
-    li, a, button{
+    .nav{
+        display: inline-block;
+        padding: 5px 20px;
+        border: solid #5d0269;
+        background: rgb(229, 159, 247, 0.719);
+        border-radius: 25px;  
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
         font-weight: bold;
         color: #5e0559;
         text-decoration: none;
         justify-content: space-between;
-        align-items: center;
-        
-        background:rgb(229, 159, 247, 0.719)
+        align-items: center; 
     }
 
-    .logo{
-        cursor: pointer;
+    .menu{
+        margin: 0 30px 0 0 ;
     }
 
-    .nav_links li {
-        list-style: none;
-
-    }
-
-    .nav_links li {
-        display: inline-block;
-       
-        padding: 0px 20px;
+    .menu a{
+        text-decoration: none;
+        color: #5e0559;
+        margin: 0 10px;
+        line-height: 70px;
         border: solid #5d0269;
-        align-self: inherit;
         background: rgb(229, 159, 247, 0.719);
-        border-radius: 25px;
+        border-radius: 25px; 
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        padding: 5px 20px;
         
     }
 
-    .nav_links li a {
-        transition: all 0.3s ease 0s;
+    label{
+        margin: 0 40px 0 0;
+        font-size: 26px;
+        line-height: 70px;
+        display: none;
     }
 
-    .nav_links li a:hover {
-        background-color: lavender;
-        cursor: pointer;
+    #toggle{
+        display: none;
     }
-    
-    .nav_links li:hover {
+
+    .menu a:hover {
         background-color: lavender;
         cursor: pointer;
     }
@@ -142,6 +147,18 @@ header{
         border-radius: 25px;     
         background:rgb(229, 159, 247, 0.719);
     }
+
+    .experience_page_container_1 a{
+        font-size: 20px;
+        font-style: italic;
+        background:rgb(229, 159, 247, 0.719);
+    }
+
+    .experience_page_container_1 a:hover{
+        color: lavender;
+        cursor: pointer;
+    }
+
         /*Blog Page*/
     .blog_page_container_1{
         z-index: 1;
@@ -169,6 +186,7 @@ header{
             height:fit-content;
             border-radius: 15%;
             margin-bottom: 20px;
+            margin-top: 10px;
         }
 
 
@@ -183,7 +201,6 @@ header{
             font-size: 20px;
             text-align: center;
             font-weight: bold;
-            width: 600px;
             height:200px;
             color: #5d0269;
         }
@@ -196,6 +213,7 @@ header{
             color: #5d0269;
             justify-content: space-around;
             text-align: center;
+            width: 600px;
         }
 
         .form-control{
@@ -209,7 +227,7 @@ header{
             display: flex;
             justify-content: center;
             text-align: center;
-            height: 45px;
+            height: 30px;
         }
 
         textarea{
@@ -231,6 +249,7 @@ header{
             cursor: pointer;
         }
     
+        /* Button to return to top of page*/
         #myBtn {
             
             position: fixed; /* Fixed/sticky position */
@@ -272,6 +291,8 @@ header{
     border: solid #5d0269;
     margin-left: auto;
     margin-right: auto;
+    text-decoration: none;
+    background:rgb(229, 159, 247, 0.719);
   }
   
   /* Add a hover effect if you want */
