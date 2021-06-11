@@ -12,18 +12,32 @@
 header{
         display: flex;
         flex-direction: column;
-        justify-content:flex-start;
-        align-items: center;
-        position: inherit;
-        margin-left: auto;
-        margin-right: auto;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items:center;      
         width: 100vmin;
-        letter-spacing: 1px;
-        word-spacing: 0.6px;
+        letter-spacing: 2px;
+        word-spacing: 1px;
         font-family: 'Monoton', cursive;
         font-size: 30px;
         color: #5e0559;
-        padding-bottom: 50px;
+        
+    }
+
+    h1{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 600px;
+        height :100px;
+        color: #5d0269;
+        border: solid #5d0269;
+        border-radius: 25px;     
+        background:rgb(229, 159, 247, 0.719);
+        margin-bottom: 20px;
     }
 
     /*Body*/
@@ -34,6 +48,46 @@ header{
     h2 {
         background:rgb(229, 159, 247, 0.719) !important;
         margin-bottom: 10px;
+        letter-spacing: 2px;
+        word-spacing: 1px;
+        font-family: 'Monoton', cursive;
+        font-size: 30px;
+        color: #5e0559;
+    }
+
+    h3{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        width: 600px;
+        height :50px;
+        color: #5d0269;
+        border: solid #5d0269;
+        border-radius: 25px;     
+        background:rgb(229, 159, 247, 0.719);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    h4{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 600px;
+        height :fit-content;
+        color: #5d0269;
+        border: solid #5d0269;
+        border-radius: 25px;     
+        background:rgb(229, 159, 247, 0.719);
+        margin-bottom: 60px;
+        padding: 5px;
     }
 
     h6 {
@@ -60,6 +114,7 @@ header{
         
     } 
 
+    /*Navigation Menu*/
     .nav{
         display: inline-block;
         padding: 5px 20px;
@@ -77,6 +132,7 @@ header{
 
     .menu{
         margin: 0 30px 0 0 ;
+        color: #5e0559;
     }
 
     .menu a{
@@ -111,7 +167,7 @@ header{
 
     /* Home Page */
     .index_page_container_1{
-        z-index: 1;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -121,17 +177,19 @@ header{
         text-align: center;
         font-weight: bold;
         width: 600px;
-        height:200px;
+        height:fit-content;
         color: #5d0269;
         border: solid #5d0269;
         border-radius: 25px;     
         background:rgb(229, 159, 247, 0.719);
+        padding: 10px;
+        margin-bottom: 10px;
     
     }
 
     /* Experience Page*/
     .experience_page_container_1{
-        z-index: 1;
+       
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -141,16 +199,20 @@ header{
         text-align: center;
         font-weight: bold;
         width: 600px;
-        height:200px;
+        height:fit-content;
         color: #5d0269;
         border: solid #5d0269;
-        border-radius: 25px;     
+        border-radius: 15px;     
         background:rgb(229, 159, 247, 0.719);
+        padding: 10px;
+        margin-bottom: 10px;
     }
 
     .experience_page_container_1 a{
         font-size: 20px;
         font-style: italic;
+        text-decoration: none;
+        color: #5d0269;
         background:rgb(229, 159, 247, 0.719);
     }
 
@@ -161,7 +223,7 @@ header{
 
         /*Blog Page*/
     .blog_page_container_1{
-        z-index: 1;
+       
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -181,6 +243,20 @@ header{
         margin-bottom: 5%;
         }
 
+        .blog_page_container_1 a{
+            
+        text-decoration: none;
+        color: #5e0559;
+        margin: 10px 10px;
+        width: fit-content;
+        border: solid #5d0269;
+        background: rgb(229, 159, 247, 0.719);
+        border-radius: 25px; 
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        padding: 5px 5px;
+        }
+
         .blog_page_container_1 img{
             width: 600px;  
             height:fit-content;
@@ -189,10 +265,15 @@ header{
             margin-top: 10px;
         }
 
+        .blog_page_container_1 a:hover {
+            background-color: lavender;
+            cursor: pointer;
+        }
+
 
         /*Contact page*/
      .contact_page_container_1{
-            z-index: 1;
+            
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -214,6 +295,7 @@ header{
             justify-content: space-around;
             text-align: center;
             width: 600px;
+            margin-top: 20px;
         }
 
         .form-control{
@@ -248,20 +330,48 @@ header{
             background-color: lavender;
             cursor: pointer;
         }
+
+        .contacts{
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+            width: 600px;
+            height:fit-content;
+            color: #5d0269;
+            border: solid #5d0269;
+            border-radius: 15px;     
+            background:rgb(229, 159, 247, 0.719);
+            padding: 10px;
+            position: fixed;
+            left: 50%;
+            bottom: 10%;
+            transform: translate(-50%, -50%);
+            margin: 0 auto;
+        }
+
+        .contact_page_container_1 li{
+            background:rgb(229, 159, 247, 0.719);
+        }
     
         /* Button to return to top of page*/
         #myBtn {
             
-            position: fixed; /* Fixed/sticky position */
-            bottom: 10px; /* Place the button at the bottom of the page */ 
+            position: fixed; 
+            bottom: 10px; 
             right: 10px;
-            z-index: 99; /* Make sure it does not overlap */
-            cursor: pointer; /* Add a mouse pointer on hover */
-            padding: 15px; /* Some padding */
-            font-size: 18px; /* Increase font size */
+            
+            cursor: pointer; 
+            padding: 15px; 
+            font-size: 18px; 
             color: #5d0269;
             border: solid #5d0269;
-            border-radius: 25px;    /* Rounded corners */ 
+            border-radius: 25px; 
             background:rgb(229, 159, 247, 0.719);
           }
           
