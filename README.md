@@ -20,7 +20,7 @@ This website built using pure HTML and CSS (and just a smidge of JS) as an asses
 
 ## Functionality and Features:
 
-I set out to design this website to express both my personality and professional skillset. 
+I set out to design this website to express both my personality and professional skillset. As I am a student developer, my professional experience and skillset will be updated as I continue along.
 
 I wanted to create a functional, and accessible website, with a bit of whimsy, but not too much clutter. 
 
