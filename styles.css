@@ -8,7 +8,7 @@
         background-position: center;
     }
 
-    /*Header*/
+   /*headers*/
 header{
         display: flex;
         flex-direction: column;
@@ -38,11 +38,6 @@ header{
         border-radius: 25px;     
         background:rgb(229, 159, 247, 0.719);
         margin-bottom: 20px;
-    }
-
-    /*Body*/
-    p {
-        background: rgb(229, 159, 247, 0.3) !important;
     }
 
     h2 {
@@ -95,6 +90,11 @@ header{
         margin-bottom: 10px;
     }
     
+    /*body*/
+
+    p {
+        background: rgb(229, 159, 247, 0.3) !important;
+    }
 
     body {
 
@@ -114,8 +114,8 @@ header{
         
     } 
 
-    /*Navigation Menu*/
-    .nav{
+    /*navigation menu*/
+    .nav {
         display: inline-block;
         padding: 5px 20px;
         border: solid #5d0269;
@@ -130,12 +130,12 @@ header{
         align-items: center; 
     }
 
-    .menu{
+    .menu {
         margin: 0 30px 0 0 ;
         color: #5e0559;
     }
 
-    .menu a{
+    .menu a {
         text-decoration: none;
         color: #5e0559;
         margin: 0 10px;
@@ -149,14 +149,14 @@ header{
         
     }
 
-    label{
+    label {
         margin: 0 40px 0 0;
         font-size: 26px;
         line-height: 70px;
         display: none;
     }
 
-    #toggle{
+    #toggle  {
         display: none;
     }
 
@@ -165,7 +165,7 @@ header{
         cursor: pointer;
     }
 
-    /* Home Page */
+    /* home page */
     .index_page_container_1{
         
         display: flex;
@@ -187,7 +187,7 @@ header{
     
     }
 
-    /* Experience Page*/
+    /* experience page*/
     .experience_page_container_1{
        
         display: flex;
@@ -221,7 +221,7 @@ header{
         cursor: pointer;
     }
 
-        /*Blog Page*/
+        /*blog page*/
     .blog_page_container_1{
        
         display: flex;
@@ -271,7 +271,7 @@ header{
         }
 
 
-        /*Contact page*/
+        /*contact page*/
      .contact_page_container_1{
             
             display: flex;
@@ -359,7 +359,7 @@ header{
             background:rgb(229, 159, 247, 0.719);
         }
     
-        /* Button to return to top of page*/
+        /* button to return to top of page*/
         #myBtn {
             
             position: fixed; 
@@ -380,7 +380,7 @@ header{
             cursor: pointer;
           }
 
-        /*Profile image*/
+        /*profile image*/
         img {  
             width: 200px;  
             height: 200px; 
@@ -388,7 +388,7 @@ header{
             border: solid #5d0269;
             }  
 
-/* Style all font awesome icons */
+/* social media links/icons */
 .fa {
     display: inline-block;
     position: static;
@@ -405,7 +405,6 @@ header{
     background:rgb(229, 159, 247, 0.719);
   }
   
-  /* Add a hover effect if you want */
   .fa:hover {
     background-color: lavender;
     cursor: pointer;

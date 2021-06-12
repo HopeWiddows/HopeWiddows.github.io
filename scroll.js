@@ -1,7 +1,7 @@
-//Get the button:
+/*getting the buttom element */
 mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+/* show the button if/when the user scrolls down 20px from the top of the page */
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -12,8 +12,8 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+/*have the screen jump straight back to the top of the page if the user clicks the button */
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0; /* for Safari browser*/
+  document.documentElement.scrollTop = 0; /* for Chrome, Firefox, IE and Opera browsers */
 }
